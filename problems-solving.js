@@ -30,6 +30,9 @@ function evenOdd( str){
 
 
 
+
+
+
 // --------------------------------------------------------------------------------------------------------------------------
 
 
@@ -52,4 +55,58 @@ function isLGSeven(number){
 }
 //  const myNumber = isLGSeven(50);
 //  console.log(myNumber);
+
+
+// ----------------------------------------------------------------------------------------------------------
+ 
+function findingBadData(numbers){
+     let nagatives = [];
+      for(i = 0; i < numbers.length ; i++){
+        if(numbers[i] < 0 ){
+            nagatives.push(numbers[i]);
+
+        }
+      }
+      return nagatives.length
+    };
+     
+        
+
+    
+    // const data=[1, -1, -2, 0 ,-3, -9 , -0 , 0  ];
+    // const data1 = findingBadData(data);
+    // console.log(data1);
+
+// ------------------------------------------------------------------------------------------------------------
+
+
+
+// problem--5
+
+
+function gemsToDiamond(frd1, frd2, frd3){
+   
+    let frdGems1 = 21
+    let frdGems2 = 32
+    let frdGems3 = 43
+
+    let totalFrdGems1 = frdGems1 * frd1
+    let totalFrdGems2 = frdGems2 * frd2
+    let totalFrdGems3 = frdGems3 * frd3
+
+    let total = totalFrdGems1 + totalFrdGems2 + totalFrdGems3;
+    if(total >  1000 * 2  ){
+        let substraction = total - 2000;
+        return substraction;
+    
+    }
+    
+    return total;
+    
+}
+
+
+// const totalgems = gemsToDiamond( 21 , 21, 21);
+// console.log(totalgems);
+
 
